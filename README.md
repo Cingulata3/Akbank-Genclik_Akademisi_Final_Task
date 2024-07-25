@@ -92,10 +92,10 @@ Günümüzde finansal işlemler için ATM'ler hayati bir rol oynamaktadır. Anca
  memnuniyetini artıracağı düşünülmektedir. Gelecekte, modelin gerçek veri ile test edilmesi ve ek
  özelliklerle geliştirilmesi, kullanıcı deneyimini daha da iyileştirebilir.
 
- Harita başlangıç durumu
+ ### Harita başlangıç durumu:
  ![image](https://github.com/user-attachments/assets/f5c11349-bb91-4ca0-acc9-d95d8ae709be)
 
-Model'in önerilen ATM'leri tahminlemesi ve en yakın önerilen ATM'ye rota oluşturması durumu
+### Model'in önerilen ATM'leri tahminlemesi ve en yakın önerilen ATM'ye rota oluşturması durumu:
  ![image](https://github.com/user-attachments/assets/be82d987-1b0b-4bc1-a578-8bb7c7d83f1d)
 
 
