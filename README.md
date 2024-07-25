@@ -25,6 +25,7 @@ Günümüzde finansal işlemler için ATM'ler hayati bir rol oynamaktadır. Anca
 ## Veri Setinin Anlaşılması
  Modeli eğitmek için hedef değişken dışında 8 adet parametreden oluşan veri seti kullanılmıştır.
  Seçilen özellikler (features) aşağıdaki şekildedir:
+ 
  Uzaklık (km): Kullanıcının bulunduğu konum ile ATM arasındaki mesafeyi kilometre cinsinden
  belirtir. Kullanıcılar genellikle kendilerine yakın ATM'leri tercih eder, bu nedenle uzaklık önemli bir
  faktördür.
@@ -53,3 +54,48 @@ Günümüzde finansal işlemler için ATM'ler hayati bir rol oynamaktadır. Anca
  Kullanıcı Puanı: ATM'yi daha önce kullanan kişilerin verdiği ortalama puanı gösterir. 2.5 ile 5
  arasında bir değer alır. Yüksek puanlı ATM'ler genellikle daha iyi hizmet ve kullanıcı deneyimi
  sunar
+
+ ## Algoritma Seçimi ve Makine Öğrenimi
+ ### Makine Öğrenimi Modellerinin Seçimi
+ 
+ Projede ATM öneri sistemini geliştirmek için çeşitli makine öğrenmesi modelleri
+ değerlendirilmiştir. Problemimiz, bir ATM'nin kullanıcıya önerilip önerilmeyeceğini tahmin etmek
+ olduğu için, bu bir sınıflandırma (classification) problemi olarak ele alınmıştır. Seçilen modeller,
+ bu sınıflandırma görevini en iyi şekilde yerine getirebilmek amacıyla test edilmiştir. proje
+ kapsamında LogisticRegression, RidgeClassifier, DecisionTreeClassifier, GaussianNB,
+ MLPClassifier, RandomForestClassifier algoritmaları kullanılarak denemeler yapılmıştır.
+
+ ## Model Seçimi ve Değerlendirme
+ 
+ Yapılan denemeler sonucunda, farklı modellerin performansları çapraz doğrulama
+ (cross-validation) gibi çeşitli doğrulama yöntemleri kullanılarak ölçülmüştür.
+ Çapraz doğrulama ve diğer doğrulama yöntemleri sonucunda en düşük hata oranına sahip
+ model Random Forest Classifier olarak belirlenmiştir. Bu model, yüksek doğruluk ve genelleme
+ yeteneği sağladığı için önerilen ATM'leri tahmin etmede en başarılı sonuçları vermiştir. Bu model,
+ ATM öneri sisteminde kullanıcıların en uygun ATM'leri bulmalarına yardımcı olacak şekilde
+ kullanılmıştır.
+
+ ## Sonuç ve Değerlendirme
+ 
+ Bu proje, kullanıcıların en uygun ATM'yi bulmalarını sağlamak amacıyla geliştirilmiş bir ATM öneri
+ sistemini kapsamaktadır. Yapılan modellemeler sonucunda, Random Forest Classifier en yüksek
+ doğruluk oranını elde ederek en başarılı model olarak seçilmiştir. Bu model, kullanıcıların
+ ihtiyaçlarına uygun ATM'leri etkili bir şekilde tahmin etmiştir.
+ 
+ ATM-RS, ATM'lerin mesafe, bakım durumu, döviz hizmeti, çalışırlık, arıza geçmişi, nakit
+ yüklenme sıklığı, trafik durumu ve kullanıcı puanı gibi kriterleri değerlendirerek önerilerde
+ bulunmaktadır. Harita üzerinde ATM'lerin görsel olarak farklı renklerde gösterilmesi, kullanıcıların
+ önerilen ve önerilmeyen ATM'leri hızlıca ayırt etmelerini sağlamaktadır. Ayrıca, sistem en yakın
+ ATM' ye en uygun rotayı çizerek erişimi kolaylaştırmaktadır.
+ 
+ Sonuç olarak ATM-RS’ nin , ATM bulma sürecini daha hızlı hale getireceği ve kullanıcı
+ memnuniyetini artıracağı düşünülmektedir. Gelecekte, modelin gerçek veri ile test edilmesi ve ek
+ özelliklerle geliştirilmesi, kullanıcı deneyimini daha da iyileştirebilir.
+
+ Harita başlangıç durumu
+ ![image](https://github.com/user-attachments/assets/f5c11349-bb91-4ca0-acc9-d95d8ae709be)
+
+Model'in önerilen ATM'leri tahminlemesi ve en yakın önerilen ATM'ye rota oluşturması durumu
+ ![image](https://github.com/user-attachments/assets/be82d987-1b0b-4bc1-a578-8bb7c7d83f1d)
+
+
