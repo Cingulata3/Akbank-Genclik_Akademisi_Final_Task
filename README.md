@@ -6,6 +6,7 @@ Günümüzde finansal işlemler için ATM'ler hayati bir rol oynamaktadır. Anca
  kartlarını yutabileceğini öğrenebilirler. Bu sebeple kullanıcılar ATM seçerken birkaç faktörü göz
  önünde bulundurmak zorunda kalır: mesafe, güvenilirlik, hizmet kalitesi ve erişim kolaylığı. Ayrıca
  kullanıcılar, para çekme/yatırma gibi gündelik işlemlerinde en uygun ATM'yi seçmek isterler.
+ 
  ![Akbank Bitirime Proje sunumu](https://github.com/user-attachments/assets/09e6d9df-efd8-4447-a2ae-fe4114300ee8)
  # Proje Açıklaması
  ATM-RS, kullanıcılara en yakın mesafedeki ve çalışır durumda olan en uygun ATM'yi bulmalarını
@@ -19,5 +20,29 @@ Günümüzde finansal işlemler için ATM'ler hayati bir rol oynamaktadır. Anca
  rotayı çizerek kullanıcının ATM'ye daha rahat ulaşmasını sağlar.
  Bu proje, kullanıcıların ATM kullanım deneyimlerini iyileştirmek için yenilikçi bir çözüm sunar ve
  bankacılık hizmetlerinin erişilebilirliğini ve kalitesini artırmayı hedefler.
+ 
  ![2](https://github.com/user-attachments/assets/8ab76168-2095-421f-b4c6-70d8f52aa540)
-
+## Veri Setinin Anlaşılması
+ Modeli eğitmek için hedef değişken dışında 8 adet parametreden oluşan veri seti kullanılmıştır.
+ Seçilen özellikler (features) aşağıdaki şekildedir:
+ ### Uzaklık (km): Kullanıcının bulunduğu konum ile ATM arasındaki mesafeyi kilometre cinsinden
+ belirtir. Kullanıcılar genellikle kendilerine yakın ATM'leri tercih eder, bu nedenle uzaklık önemli bir
+ faktördür.
+ Bakım (Ay): ATM'nin son bakımının üzerinden geçen süreyi ay cinsinden gösterir. Bakımı düzenli
+ yapılan ATM'lerin daha az arıza yapma olasılığı yüksektir, bu da kullanıcı deneyimini olumlu
+ etkiler.
+ Döviz: ATM'nin döviz bozdurma hizmeti sunup sunmadığını belirtir. Evet/Hayır değeri alır. Döviz
+ çekmek isteyen kullanıcılar için önemli bir kriterdir.
+ Çalışıyor mu?: ATM'nin şu anda çalışır durumda olup olmadığı bilgisini içerir. Evet/Hayır değeri
+ alır. Çalışmayan bir ATM elbette önerilemez.
+ Arıza: Son bir ay içinde ATM'de kaç kez arıza raporu verildiğini gösterir. Arıza sayısı ne kadar
+ fazlaysa, ATM'nin güvenilirliği o kadar düşük olur ve önerilme olasılığı azalır.
+ Yükleme (Gün Önce): ATM'ye son nakit yüklemesinin üzerinden kaç gün geçtiğini belirtir. Yakın
+ zamanda nakit yüklenmiş bir ATM'nin nakitsiz kalma olasılığı daha düşüktür, bu da tercih edilme
+ sebebidir.
+ Trafik: ATM'nin bulunduğu konumun yoğun saatlerde (mesai giriş/çıkış saatleri gibi) trafik
+ yoğunluğu olup olmadığını belirtir. Evet/Hayır değeri alır. Yoğun trafik, ATM'ye ulaşımı
+ zorlaştırabilir, bu yüzden bazı kullanıcılar için tercih edilmeyebilir.
+ Kullanıcı Puanı: ATM'yi daha önce kullanan kişilerin verdiği ortalama puanı gösterir. 2.5 ile 5
+ arasında bir değer alır. Yüksek puanlı ATM'ler genellikle daha iyi hizmet ve kullanıcı deneyimi
+ sunar
