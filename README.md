@@ -9,3 +9,4 @@ Günümüzde finansal işlemler için ATM'ler hayati bir rol oynamaktadır. Anca
  projede, kullanıcıların ihtiyaçlarına en uygun ATM'yi önermeyi amaçlayan bir makine öğrenmesi
  modeli ve aynı zamanda görsellik ve yol tarifi gibi geliştirmeler ile kullanıcı dostu yaklaşım
  sağlayan harita web arayüzü geliştirilmiştir.
+![WhatsApp Image 2024-05-02 at 10 06 08 PM](https://github.com/user-attachments/assets/218ad33e-14f5-4f00-819e-246a192e516a)
