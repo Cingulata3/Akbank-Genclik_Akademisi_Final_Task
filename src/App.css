@@ -1,0 +1,63 @@
+.map-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.recommended-atms-list {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 300px;
+  max-height: 50vh;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: rgba(240, 240, 240, 0.8);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.recommended-atms-list h3 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.recommended-atms-list ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.recommended-atms-list li {
+  margin-bottom: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .recommended-atms-list {
+    width: 80%;
+    left: 10px;
+    right: auto;
+    max-height: 40vh;
+  }
+}
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 9999;
+}
+
+.loading-screen h2 {
+  font-size: 24px;
+  color: #333;
+}
