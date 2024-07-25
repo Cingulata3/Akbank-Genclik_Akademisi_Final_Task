@@ -1,5 +1,5 @@
 # Akbank Gençlik Akademisi Teknoloji Okuryazarlığı Bitirme Projesi
-ATM-RS (Recommendation System)
+## ATM-RS (Recommendation System)
 Günümüzde finansal işlemler için ATM'ler hayati bir rol oynamaktadır. Ancak kullanıcılar ATM'ye
  ulaşana kadar, ATM'nin durumu hakkında bilgi sahibi olamazlar. Örneğin, kullanıcılar ancak
  ATM'ye vardıklarında ATM'nin bozuk olduğunu veya bakımı yapılmadığı için arızadan kaynaklı
