@@ -1,1 +1,1 @@
-# Akbank-Genclik_Akademisi_Final_Task
+# Akbank Gençlik Akademisi Teknoloji Okuryazarlığı Bitirme Projesi
