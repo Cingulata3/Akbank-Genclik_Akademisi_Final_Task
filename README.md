@@ -98,4 +98,10 @@ Günümüzde finansal işlemler için ATM'ler hayati bir rol oynamaktadır. Anca
 ### Model'in önerilen ATM'leri tahminlemesi ve en yakın önerilen ATM'ye rota oluşturması durumu:
  ![image](https://github.com/user-attachments/assets/be82d987-1b0b-4bc1-a578-8bb7c7d83f1d)
 
+# Proje Sunumu
+
+
+https://github.com/user-attachments/assets/eaee9ff4-17f7-46af-9db6-c94f4b0c6ae9
+
+
 
